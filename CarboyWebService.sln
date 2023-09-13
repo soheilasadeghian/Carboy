@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarboyWebService", "CarboyWebService\CarboyWebService.csproj", "{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QADebug|Any CPU = QADebug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}.QADebug|Any CPU.ActiveCfg = QADebug|Any CPU
+		{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}.QADebug|Any CPU.Build.0 = QADebug|Any CPU
+		{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F5FC7A-B4C0-47EC-AD6B-32535DAAFF89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7D03FA2-0E3F-41CF-9F4C-3EA73669B5ED}
+	EndGlobalSection
+EndGlobal

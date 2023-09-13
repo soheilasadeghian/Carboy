@@ -1,0 +1,6 @@
+channel: SIP/84015-PRI/~
+Callerid: " Call Files "<84015600>
+Application: Playback
+Data: CB-Start-Active&|CB-End-Active&CB-Start-Active&|CB-End-Active  
+AlwaysDelete: yes
+

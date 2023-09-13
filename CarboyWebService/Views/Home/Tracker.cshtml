@@ -1,0 +1,222 @@
+﻿@model CarBoyWebservice.Models.TrackerModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>مکان کاربوی</title>
+    <style>
+        @@font-face {
+            font-family: 'sans';
+            src: url('../../content/sans.eot') format('eot'), /* IE6–8 */
+            url('../../content/sans.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url('../../content/sans.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+        }
+
+        body {
+            font-family: 'sans';
+            font-size: 1em;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .carboy-info {
+            height: 110px;
+            background: #efeded;
+            border: 1px dashed #d8d6d6;
+            margin-bottom: 0px;
+            position: relative;
+        }
+
+
+
+            .carboy-info .record {
+                text-align: right;
+                margin: 5px;
+                margin-top: 5px;
+                border-radius: 5px;
+                display: block;
+            }
+            .carboy-info .record {
+                display:block !important;
+            }
+                .carboy-info .record .title {
+                    font-weight: bold;
+                }
+
+            .carboy-info .avatar {
+                margin: 0px;
+                height: 100%;
+                width: 110px;
+                background: #fff;
+                margin-left: 15px;
+                float: right;
+            }
+
+            .carboy-info .name {
+                font-size: 0.9em;
+            }
+
+            .carboy-info .sp {
+                font-size: 0.8em;
+                color: #6b6969;
+            }
+
+            .carboy-info .tel {
+                background-color: #ffffff;
+                box-shadow: 0px 0px 6px #808080;
+                border-radius: 25px;
+                width: 50px;
+                height: 50px;
+                font-size: 0.8em;
+                position: absolute;
+                top: 80px;
+                left: 10px;
+                z-index: 1000;
+            }
+
+        .wraper {
+            position: fixed;
+            height: 110px;
+            width: 100%;
+            top: 0px;
+            z-index: 1111;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mt-15 {
+            margin-top: 20px;
+        }
+
+        #map {
+            margin-top: 110px;
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            direction: rtl;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="~/content/jquery-1.11.3.min.js"></script>
+    <script src="~/content/jquery-migrate-1.0.0.js"></script>
+    <script src="~/content/tracker/ajax.js"></script>
+    <script src="~/content/tracker/js.js"></script>
+</head>
+<body>
+    <input type="hidden" id="hash" name="hash" value="@Model.hash" />
+
+    <input type="hidden" id="src-lat" name="hash" value="@Model.srclat" />
+    <input type="hidden" id="src-lng" name="hash" value="@Model.srclng" />
+
+    <input type="hidden" id="des-lat" name="hash" value="@Model.deslat" />
+    <input type="hidden" id="des-lng" name="hash" value="@Model.deslng" />
+
+    <div class="wraper">
+        <div class="carboy-info">
+            <div class="avatar">
+                <img style="width:100%;height:100%" src="@Model.image" />
+            </div>
+            <div class="record">
+                <a href="tel:@Model.tel"><img class="tel" src="~/content/tell.png" /></a>
+            </div>
+            <div class="record mt-15">
+                <span class="title name">@Model.fullName</span>
+            </div>
+            <div class="record">
+                <span class="title sp">متخصص @Model.sp</span>
+            </div>
+            <div class="record">
+                <span class="title sp">@Model.tel</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="map"></div>
+
+
+
+    <script>
+        function initMap() {
+            var directionsService = new google.maps.DirectionsService;
+            var directionsDisplay = new google.maps.DirectionsRenderer;
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7
+            });
+
+            directionsDisplay.setMap(map);
+
+            calculateAndDisplayRoute(directionsService, directionsDisplay)
+
+            var srcLat = document.getElementById("src-lat").value;
+            var srcLng = document.getElementById("src-lng").value;
+            var src = new google.maps.LatLng(srcLat, srcLng);
+
+            $(document).on('new-position', function (event, result) {
+
+                var latlng = new google.maps.LatLng(result.lat, result.lng);
+                marker.setPosition(latlng);
+
+            });
+
+
+
+            var image = 'http://carman.carboy.info/content/marker.png';
+
+            marker = new google.maps.Marker({
+                position: src,
+                map: map,
+                icon : image
+            });
+           
+            setInterval(request, 3000);
+        }
+
+        function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+
+            var srcLat = document.getElementById("src-lat").value;
+            var srcLng = document.getElementById("src-lng").value;
+
+            var desLat = document.getElementById("des-lat").value;
+            var desLng = document.getElementById("des-lng").value;
+
+            var src = new google.maps.LatLng(srcLat, srcLng);
+            var des = new google.maps.LatLng(desLat, desLng);
+
+           
+
+            directionsService.route({
+                origin: src,
+                destination: des,
+                travelMode: 'DRIVING'
+            }, function (response, status) {
+                if (status === 'OK') {
+                    directionsDisplay.setDirections(response);
+                } else {
+                    window.alert('خطا در نمایش مسیر');
+                }
+            });
+        }
+
+        function request() {
+
+            tracker.f1($('#hash').val());
+
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw7DIrQdashMVoy6KrbVRla97e_DoOzYE&callback=initMap">
+    </script>
+</body>
+</html>

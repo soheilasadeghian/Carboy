@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataAccess">
+  <DataContextMoniker Name="/DataAccessDataContext" />
+  <nestedChildShapes>
+    <classShape Id="50375459-e7ad-4a46-a592-edd5374827a6" absoluteBounds="0.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataAccessDataContext/sessionTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19ce8acd-c4d7-415e-a07e-cf0811d7ab5f" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d8d33ae-7392-4777-b097-d38f817b90d7" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataAccessDataContext/settingTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="636f669c-b0da-4591-81d4-a49d3ca6cd68" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3515e0bf-6aa8-45e1-a722-7fe10f3431ae" absoluteBounds="3.75, 3.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/DataAccessDataContext/smsTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed2789c9-dcd9-4795-84e2-1b2b57670243" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

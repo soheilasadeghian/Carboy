@@ -1,0 +1,51 @@
+﻿@model System.String
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        .box{
+            direction:rtl;
+            border:2px solid #0094ff;
+            padding:30px;
+            display:block;
+            margin:30px auto;
+            width:300px;
+            font-size:20px;
+            text-align:center;
+            color:#095b97;
+        }
+
+        .return
+        {
+            background-color:#7507a5;
+            color:#fff;
+            font-size:15px;
+            text-align:center;
+            padding:8px;
+            margin:10px auto;
+            width:120px;
+            border:1px solid #46145b;
+            display:block;
+            outline:none;
+            outline:0;
+            cursor:pointer;
+            text-decoration:none;
+            font-weight:bold;
+        }
+    </style>
+
+    <title>پایان عملیات پرداخت</title>
+</head>
+<body>
+    <div class="box"> 
+        @Model
+    </div>
+    <a href="carboy://carboy.tana.ir/payment" target="_blank" class="return">بازگشت به کاربوی</a>
+</body>
+</html>
