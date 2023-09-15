@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CarBoyDBLive" Class="DataAccessDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=172.16.30.11;Initial Catalog=CarBoyDBLive;Persist Security Info=True;User ID=sadeghian" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CarBoyDBConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=CarBoyDBLive;Persist Security Info=True;User ID=." SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CarBoyDBConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ActiveDayTbl" Member="ActiveDayTbls">
     <Type Name="ActiveDayTbl">
       <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
