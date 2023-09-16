@@ -45,9 +45,8 @@ web service for Customers(who place orders) application(client of api)
 ``` -->
 
 ### Implementation description:
- #### in [CoreController](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Controllers/CoreController.cs) call API method
-
- #### web services list : [code](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Engine.cs)
+ in [CoreController](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Controllers/CoreController.cs) call API method\
+ web services list : [code](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Engine.cs)
 
 ### List of some web services : 
  getUserProductListConstructor\
