@@ -10,8 +10,11 @@ A Restful API for a carboy mobile application Using C# and SQL
 ## Overview
 
 ✔️ "Carboy" is a web service made with Restful API Technology using C#, SQL, .Net Framework 4.5\
-    web service can be used for any type of client(web app, android, IOS)
+    This web service can be used for any type of client(web app, android, IOS)
     The database file is also attached to the repository.
+
+    <!-- ### this project is part of Big carboy project just for demonstrate implement webapi
+    carboy proect in -->
 
 ## Tools Used 🛠️
 *  Visual studio app,Sql server app
@@ -20,27 +23,25 @@ A Restful API for a carboy mobile application Using C# and SQL
 1. Restore DB in SQL Server from the DB file in root of repository (CarBoyDBLive.bak)<br/>
 2. Open Web Service Solution in Visual Studio and build the project.<br/>
 3. Execute (F5) to run. Browser will throw error page which is fine as this is only WEB-API implementation.<br/>
-4. You can test the API using a tool such as [`Postman`](https://www.getpostman.com/).
-
-
-
+4. You can test the API using a tool such as UnitTest Project in repository.
+<!-- 
 ### How call a web service Method:
 ```c#
 
-```
-## List of some requests in webservice files:
+``` -->
 
- ### User service [asmx file](https://github.com/soheilasadeghian/Appinno/blob/main/appinno_panel_webservice/AppinnoNew/service/userservice.asmx.cs)
+### Implementation description
+ ### in [CoreController](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Controllers/CoreController.cs) call API method
 
-resetPassword,sendChartComment,sendDownloadComment,sendEventComment,sendIcanComment,sendIoComment,sendNewsComment,sendPubComment,sendValidationCode
- 
- ### Upload service [asmx file](https://github.com/soheilasadeghian/Appinno/blob/main/appinno_panel_webservice/AppinnoNew/service/uploadService.asmx.cs)
-UploadFile,uploadPacket,uploadRequest
+ ### web services list : [code](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Engine.cs)
 
- ### Push service [asmx file](https://github.com/soheilasadeghian/Appinno/blob/main/appinno_panel_webservice/AppinnoNew/service/pushservice.asmx.cs)
-sendPush,sendPushTo,setPushInfo
-
-
+ ### List of some web services : 
+ getUserProductListConstructor\
+ getCarboyPathConstructor\
+ carboyMoveToCustomerConstructor\
+ carboyStartServiceConstructor\
+ carboyServiceProductDeliveredConstructor\
+ ...
 
 ## License
 [MIT](https://github.com/soheilasadeghian/Carboy/blob/main/LICENSE)
