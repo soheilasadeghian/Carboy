@@ -10,24 +10,24 @@ A Restful API for a carboy mobile application Using C# and SQL
 ## Overview
 
 ✔️ This project is a web service made with Restful API Technology using C#, SQL, .Net Framework 4.5\
-    This web service can be used for any type of client(web app, android, IOS)
+    This web service can be used for any type of client(web app, android, IOS)\
     The database file is also attached to the repository.
 
- ### This project is part of the web service used in Carboy system
+ ### *This project is part of the web service used in Carboy system
 
 In the following, I will explain the big project of Carboy.
 
 ## Carboy system Modules:
-_carboy web service: *(this repository is this project)
+* carboy web service: *(this repository is this project)
 webservice for repairmans applications(client of api)
-_custumer web service:
+* custumer web service:
 web service for Customers(who place orders) application(client of api) 
-_web panel for admin to manage system
-_android app for customers
-_ios app for customers
-_web app for customers
-_android app for repairmans
-_ios app for repairmans
+* web panel for admin to manage system
+* android app for customers
+* ios app for customers
+* web app for customers
+* android app for repairmans
+* ios app for repairmans
 
 ## Tools Used 🛠️
 *  Visual studio app,Sql server app
@@ -44,12 +44,12 @@ _ios app for repairmans
 
 ``` -->
 
-### Implementation description
- ### in [CoreController](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Controllers/CoreController.cs) call API method
+### Implementation description:
+ #### in [CoreController](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Controllers/CoreController.cs) call API method
 
- ### web services list : [code](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Engine.cs)
+ #### web services list : [code](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Engine.cs)
 
- ### List of some web services : 
+### List of some web services : 
  getUserProductListConstructor\
  getCarboyPathConstructor\
  carboyMoveToCustomerConstructor\
