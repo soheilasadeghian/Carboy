@@ -57,7 +57,11 @@ web service for Customers(who place orders) application(client of api)
  ...
 
 ### There is some Database Diagrams:
+![alt text](https://github.com/soheilasadeghian/Carboy/blob/main/DB%20Diagrams/CarDiagram.PNG)
 
+![alt text](https://github.com/soheilasadeghian/Carboy/blob/main/DB%20Diagrams/CustomerDiagram.PNG)
+
+![alt text](https://github.com/soheilasadeghian/Carboy/blob/main/DB%20Diagrams/ServiceDiagram.PNG)
 
 ## License
 [MIT](https://github.com/soheilasadeghian/Carboy/blob/main/LICENSE)
