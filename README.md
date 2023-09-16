@@ -29,6 +29,12 @@ web service for Customers(who place orders) application(client of api)
 * android app for repairmans
 * ios app for repairmans
 
+## System features
+* zarinpal payment gateway 
+* Connecting to Mellat Bank customer club web service
+* Give GiftCard for Customer
+* Implementation of an algorithm to prevent synchronization of services
+
 ## Tools Used 🛠️
 *  Visual studio app,Sql server app
 *  Restful API, C#, SQL
@@ -38,11 +44,6 @@ web service for Customers(who place orders) application(client of api)
 2. Open Web Service Solution in Visual Studio and build the project.<br/>
 3. Execute (F5) to run. Browser will throw error page which is fine as this is only WEB-API implementation.<br/>
 4. You can test the API using a tool such as Unit Test Project in repository.
-<!-- 
-### How call a web service Method:
-```c#
-
-``` -->
 
 ### Implementation description:
  in [CoreController](https://github.com/soheilasadeghian/Carboy/blob/main/CarboyWebService/Controllers/CoreController.cs) call API method
@@ -54,6 +55,9 @@ web service for Customers(who place orders) application(client of api)
  carboyStartServiceConstructor\
  carboyServiceProductDeliveredConstructor\
  ...
+
+### There is some Database Diagrams:
+
 
 ## License
 [MIT](https://github.com/soheilasadeghian/Carboy/blob/main/LICENSE)
