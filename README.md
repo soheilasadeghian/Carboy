@@ -18,9 +18,9 @@ A Restful API for a carboy mobile application Using C# and SQL
 In the following, I will explain the big project of Carboy.
 
 ## Carboy system Modules:
-* carboy web service: *(this repository is this project)
+* carboy web service: (this repository is this project)*\
 webservice for repairmans applications(client of api)
-* custumer web service:
+* custumer web service:\
 web service for Customers(who place orders) application(client of api) 
 * web panel for admin to manage system
 * android app for customers
@@ -32,7 +32,7 @@ web service for Customers(who place orders) application(client of api)
 ## System features
 * zarinpal payment gateway 
 * Connecting to Mellat Bank customer club web service
-* Give GiftCard for Customer
+* Give GiftCard to Customer
 * Implementation of an algorithm to prevent synchronization of services
 
 ## Tools Used 🛠️
