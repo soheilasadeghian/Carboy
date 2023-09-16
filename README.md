@@ -9,21 +9,35 @@ A Restful API for a carboy mobile application Using C# and SQL
 
 ## Overview
 
-✔️ "Carboy" is a web service made with Restful API Technology using C#, SQL, .Net Framework 4.5\
+✔️ This project is a web service made with Restful API Technology using C#, SQL, .Net Framework 4.5\
     This web service can be used for any type of client(web app, android, IOS)
     The database file is also attached to the repository.
 
-    <!-- ### this project is part of Big carboy project just for demonstrate implement webapi
-    carboy proect in -->
+ ### This project is part of the web service used in Carboy system
+
+In the following, I will explain the big project of Carboy.
+
+## Carboy system Modules:
+_carboy web service: *(this repository is this project)
+webservice for repairmans applications(client of api)
+_custumer web service:
+web service for Customers(who place orders) application(client of api) 
+_web panel for admin to manage system
+_android app for customers
+_ios app for customers
+_web app for customers
+_android app for repairmans
+_ios app for repairmans
 
 ## Tools Used 🛠️
 *  Visual studio app,Sql server app
+*  Restful API, C#, SQL
 
 ## Installation Steps 📦 
 1. Restore DB in SQL Server from the DB file in root of repository (CarBoyDBLive.bak)<br/>
 2. Open Web Service Solution in Visual Studio and build the project.<br/>
 3. Execute (F5) to run. Browser will throw error page which is fine as this is only WEB-API implementation.<br/>
-4. You can test the API using a tool such as UnitTest Project in repository.
+4. You can test the API using a tool such as Unit Test Project in repository.
 <!-- 
 ### How call a web service Method:
 ```c#
