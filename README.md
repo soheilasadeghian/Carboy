@@ -1,5 +1,5 @@
 # Carboy 🔥
-A Restful API for a carboy mobile application Using C# and SQL
+A Restful API for a carboy mobile application(car wash app) Using C# and SQL
 
 :star: Star me on GitHub — it helps!
 
