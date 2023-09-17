@@ -19,8 +19,8 @@ In the following, I will explain the big project of Carboy.
 
 ## Carboy system Modules:
 * carboy web service: (this repository is this project)*\
-webservice for repairmans applications(client of api)
-* custumer web service:\
+webservice for repairmans application(client of api)
+* customer web service:\
 web service for Customers(who place orders) application(client of api) 
 * web panel for admin to manage system
 * android app for customers
